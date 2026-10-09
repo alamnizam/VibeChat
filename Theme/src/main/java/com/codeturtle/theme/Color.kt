@@ -1,4 +1,4 @@
-package com.codeturtle.vibechat.ui.theme
+package com.codeturtle.theme
 
 import androidx.compose.ui.graphics.Color
 

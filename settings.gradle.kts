@@ -22,6 +22,10 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Vibe Chat"
+rootProject.name = "VibeChat"
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 include(":app")
 include(":Theme")
+include(":chat:dashboard:presenter")
+include(":chat:dashboard:data")
+include(":chat:dashboard:domain")

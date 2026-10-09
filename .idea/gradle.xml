@@ -11,6 +11,11 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/Theme" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/chat" />
+            <option value="$PROJECT_DIR$/chat/dashboard" />
+            <option value="$PROJECT_DIR$/chat/dashboard/data" />
+            <option value="$PROJECT_DIR$/chat/dashboard/domain" />
+            <option value="$PROJECT_DIR$/chat/dashboard/presenter" />
           </set>
         </option>
       </GradleProjectSettings>
