@@ -10,7 +10,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
-import com.codeturtle.theme.VibeChatTheme
+import com.codeturtle.vibechat.theme.VibeChatTheme
 import com.codeturtle.vibechat.ui.navigation.NavigationGraph
 import com.codeturtle.vibechat.ui.splashScreen.SplashScreen
 import kotlinx.coroutines.delay

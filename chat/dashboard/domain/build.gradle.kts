@@ -1,30 +1,37 @@
 plugins {
     alias(libs.plugins.android.library)
+    alias(libs.plugins.dagger)
+    alias(libs.plugins.ksp)
 }
 
 android {
-    namespace = "com.codeturtle.domain"
-    compileSdk {
-        version = release(37)
-    }
-
-    defaultConfig {
-        minSdk = 37
-
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-    }
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
-    }
+    namespace = "com.codeturtle.vibechat.chat.dashboard.domain"
 
 }
 
 dependencies {
-    implementation(libs.androidx.appcompat)
-    implementation(libs.androidx.core.ktx)
-    implementation(libs.material)
-    testImplementation(libs.junit)
-    androidTestImplementation(libs.androidx.espresso.core)
-    androidTestImplementation(libs.androidx.junit)
+    implementation(project(":chat:dashboard:data"))
+
+//Core
+implementation(libs.androidx.core.ktx)
+implementation(libs.androidx.appcompat)
+implementation(libs.material)
+
+//core junit test
+testImplementation(libs.junit)
+androidTestImplementation(libs.androidx.junit)
+androidTestImplementation(libs.androidx.espresso.core)
+
+//dagger hilt
+implementation(libs.hilt.android)
+ksp(libs.hilt.compiler)
+implementation(libs.androidx.hilt.navigation.compose)
+kspAndroidTest(libs.hilt.android.compiler)
+androidTestImplementation(libs.hilt.android.testing)
+androidTestAnnotationProcessor(libs.hilt.android.compiler)
+
+//retrofit
+implementation(libs.retrofit)
+implementation(libs.converter.gson)
+implementation(libs.logging.interceptor)
 }

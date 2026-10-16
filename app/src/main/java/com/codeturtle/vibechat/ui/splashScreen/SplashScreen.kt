@@ -25,7 +25,7 @@ fun SplashScreen() {
     ) {
         Image(
             painter = painterResource(
-                id = R.drawable.logo
+                id = R.mipmap.logo
             ),
             contentDescription = "Vibe Chat logo",
             modifier = Modifier.size(
